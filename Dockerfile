@@ -6,8 +6,6 @@ WORKDIR /usr/src/socketiochat
 
 COPY . /usr/src/socketiochat
 
-RUN WITH_SASL=0 npm install
-
 EXPOSE 3000
 
 CMD ["node","index.js"]
